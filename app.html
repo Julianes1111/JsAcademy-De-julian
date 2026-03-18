@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Academy</title>
+  <link rel="stylesheet" href="styleP.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.ico">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">JS</span>
+      <span class="logo-text">Academy</span>
+    </div>
+    <nav class="nav">
+      <button class="nav-item active" data-lesson="0">
+        <span class="nav-num">01</span>
+        <span>Variables</span>
+      </button>
+      <button class="nav-item" data-lesson="1">
+        <span class="nav-num">02</span>
+        <span>Tipos de datos</span>
+      </button>
+      <button class="nav-item" data-lesson="2">
+        <span class="nav-num">03</span>
+        <span>Operadores</span>
+      </button>
+      <button class="nav-item" data-lesson="3">
+        <span class="nav-num">04</span>
+        <span>Condicionales</span>
+      </button>
+      <button class="nav-item" data-lesson="4">
+        <span class="nav-num">05</span>
+        <span>Bucles</span>
+      </button>
+      <button class="nav-item" data-lesson="5">
+        <span class="nav-num">06</span>
+        <span>Funciones</span>
+      </button>
+      <button class="nav-item" data-lesson="6">
+        <span class="nav-num">07</span>
+        <span>Arrays</span>
+      </button>
+      <button class="nav-item" data-lesson="7">
+        <span class="nav-num">08</span>
+        <span>Objetos</span>
+      </button>
+    </nav>
+    <div class="progress-wrap">
+      <div class="progress-label">Progreso <span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="lesson-badge" id="lesson-badge">Lección 01</div>
+      <button class="run-btn" id="run-btn">▶ Ejecutar</button>
+    </header>
+
+    <div class="content-grid">
+      <!-- THEORY PANEL -->
+      <section class="theory-panel" id="theory-panel">
+        <h1 class="lesson-title" id="lesson-title"></h1>
+        <p class="lesson-intro" id="lesson-intro"></p>
+        <div class="concept-cards" id="concept-cards"></div>
+      </section>
+
+      <!-- CODE PANEL -->
+      <section class="code-panel">
+        <div class="editor-header">
+          <span class="editor-dot red"></span>
+          <span class="editor-dot yellow"></span>
+          <span class="editor-dot green"></span>
+          <span class="editor-filename">script.js</span>
+          <button class="copy-btn" id="copy-btn" title="Copiar código">⎘</button>
+        </div>
+        <div class="editor-wrap">
+          <div class="line-numbers" id="line-numbers"></div>
+          <textarea class="editor" id="editor" spellcheck="false"></textarea>
+        </div>
+
+        <div class="output-header">
+          <span class="output-label">CONSOLA</span>
+          <button class="clear-btn" id="clear-btn">Limpiar</button>
+        </div>
+        <div class="output" id="output"></div>
+        <div class="challenge-box" id="challenge-box"></div>
+      </section>
+    </div>
+
+    <div class="nav-btns">
+      <button class="prev-btn" id="prev-btn">← Anterior</button>
+      <button class="next-btn" id="next-btn">Siguiente →</button>
+    </div>
+  </main>
+
+  <script src="appp.js"></script>
+</body>
+</html>
